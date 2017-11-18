@@ -6,6 +6,11 @@ node_modules
 bower_components
 *bower_components*
 ~*
+# Visual Studio
+*.psess
+*.vsp
+.vscode/*
+*.vscode/*
 
 xtest_
 
