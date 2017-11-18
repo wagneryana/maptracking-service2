@@ -12,6 +12,3 @@ class Animal(models.Model):
 
     def __str__(self):
         return self.name
-
-    def speak(self):
-        return 'The %s says "%s"' % (self.name, self.sound)
