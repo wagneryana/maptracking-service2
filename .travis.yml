@@ -16,3 +16,6 @@ script:
 
 after_script:
 - codeclimate-test-reporter --file .coverage # send test coverage report to code climate
+
+after_success: 
+- coverage report
