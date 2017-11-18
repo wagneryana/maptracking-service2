@@ -12,7 +12,7 @@ install:
 - pip install -q Django==$DJANGO
 
 script:
-- coverage run --source=habitica_slack manage.py test # create test coverage report
+- coverage run --source=habitica_slack manage.py test
 
 after_script:
 - codeclimate-test-reporter --file .coverage # send test coverage report to code climate
