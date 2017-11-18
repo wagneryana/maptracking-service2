@@ -13,7 +13,6 @@ install:
 
 script:
 - pytest
-- export DJANGO_SECRETKEY=secret # needed because settings.py pulls it from os.environ
 - coverage run --source=habitica_slack manage.py test # create test coverage report
 
 after_script:
