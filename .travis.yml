@@ -12,7 +12,6 @@ install:
 - pip install -q Django==$DJANGO
 
 script:
-- pytest
 - coverage run --source=habitica_slack manage.py test # create test coverage report
 
 after_script:
