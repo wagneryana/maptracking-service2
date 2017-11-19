@@ -26,8 +26,7 @@ class Producto(models.Model):
     unidad_med = models.ForeignKey(UnidadMed)
     categoria = models.ManyToManyField(
         "Categoria",
-        verbose_name="list of Categorias",
-        null=True,  blank=True)
+        verbose_name="list of Categorias", blank=True)
 
     class Meta:
         verbose_name = "Producto"
