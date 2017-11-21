@@ -15,8 +15,8 @@ install:
 script:
 - coverage run --source=habitica_slack manage.py test
 - flake8 --max-line-length=100 --max-complexity=10 --statistics --benchmark django_slowtests
-- coverage run test.py test
 - coverage report
+- python manage.py test
 
 after_script:
 - codeclimate-test-reporter --file .coverage # send test coverage report to code climate
